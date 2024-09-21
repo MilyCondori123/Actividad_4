@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crar y añadir u elemento</title>
+</head>
+<body>
+    <h1>ejemplo de cracion de elementos </h1>
+    <button onclick="agregarParrafo()">añadir parrafo</button>
+    <!--
+    crear un div y añadir un texto cualquiera a traves de un metodo u fuccion y aplicar los estilos siquientes:
+    elDiv  debe tener un border 4px, solido y color green,
+    el ancho del Div debe tener 400px,
+    el texto debe estar aliineado centrado y tipo de fuente verdana-->
+    <script>
+        function agregarParrafo(){
+            let nuevoParrafo=document.createElement("p");
+            //este es el texto del parrafo
+
+              nuevoParrafo.textContent="este es un nuevo párrafo";
+            // añadir el parrafo al final de body
+            document.body.appendChild(nuevoParrafo);
+        }
+    </script>
+</body>
+</html>

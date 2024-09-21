@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - SELECCION POR CLASE</title>
+    <style>
+        /*/
+        </div>
+<!--Aplicar los estilos a la clase cajita!
+1.- Que tenga un borde de grosor  2px y color azul.
+2.- Que el texto  esta centrado , con tipo de letra Courier y resalta-->*/
+    
+        #cajita {
+            border: 2px solid blue;
+            text-align: center;
+            font-family: Courier, monospace;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p class="miclase">Los tres tristes tigres tragan trigo</p>
+    <p class="miclase">¡FELIZ DIA DEL PROGRAMADOR! 12 DE SETIEMBRE</p>
+    <div id="cajita">
+        <p>Este es un DIV con clase "cajita"</p>
+    </div>
+    <script>
+        let elementos = document.getElementsByClassName("miclase");
+        for (let i = 0; i < elementos.length; i++) {
+            elementos[i].style.color = "green";
+        }
+    </script>
+</body>
+</html>

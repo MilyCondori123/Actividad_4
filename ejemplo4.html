@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar el selector</title>
+</head>
+<body>
+    <p class="miClase">Párrafo1</p>
+    <p class="miClase">Párrafo2</p>
+    <p class="miClase">Párrafo3</p>
+
+    <script>
+        /* seleccinar el primer elemento*/
+        let primerElemento=document.querySelector(".miClase");
+        primerElemento.style.color=color="red";
+        primerElemento.style.fontFamily="verdana";
+         /* seleccinar todo los elementos*/
+         let todosElementos=document.querySelectorAll(".miClase");
+         todosElementos.forEach(Elemento =>{
+            elemento.style.fontFamily="Arial";
+            elemento.style.color="blue";
+         }
+        )
+    </script>
+</body>
+</html>
